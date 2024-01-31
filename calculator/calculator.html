@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet"href="Calculator.css">
+</head>
+<body>
+    <!-- <div class="container">
+        <div class="Calculator">
+            <from>
+               
+                <div class="display">
+                    <input type="text"name="display">
+                </div>
+                <div>
+                    <input type="button"value="Ac">
+                    <input type="button"value="DE">
+                    <input type="button"value=".">
+                    <input type="button"value="/">
+                </div>
+                <div>
+                    <input type="button"value="7" onclick="display.value +='7'">
+
+                    <input type="button"value="8"onclick="display.value +='8'">
+
+                    <input type="button"value="9" onclick="display.value+='9'">
+                    
+                    <input type="button"value="*">
+                </div>
+                <div>
+                    <input type="button"value="4">
+                    <input type="button"value="5">
+                    <input type="button"value="6">
+                    <input type="button"value="-">
+                </div>
+                <div>
+                    <input type="button" value="1">
+                    <input type="button"value="2">
+                    <input type="button"value="3">
+                    <input type="button"value="+">
+                   
+                </div>
+                <input type="button"value="00">
+                <input type="button"value="0">
+                <input type="button"value="=" class="equal">
+                <div>
+                    
+                </div>
+            </from>
+
+        </div>
+
+    </div> -->
+    
+     <div id="Calculator">
+        <input type="text" id="display">
+        <div class="button-conatainer">
+            <button class="button"onclick="currentDisplay = ''; docment.queryselector('#display')">c</button>
+
+            <button class="button" oneclick="currentDisplay=currentDisplay+ '1'; document.querySelector('#display').value=currentDisplay;">1</button>
+
+            <button  class="button"oneclick="currentDisplay=currentDisplay+ '2'; document.querySelector('#display').value=currentDisplay;">2</button>
+
+            <button class="button"oneclick="currentDisplay=currentDisplay+ '+'; document.querySelector('#display').value=currentDisplay;">+</button>
+
+            <button class="button"oneclick="currentDisplay=currentDisplay+ '3'; document.querySelector('#display').value=currentDisplay;">3</button>
+            
+            <button class="button"oneclick="currentDisplay=currentDisplay+ '4';document.querySelector('#display').value=currentDisplay;">4</button>
+
+            <button class="button" oneclick="currentDisplay=currentDisplay+'-';document.querySelector('#display').value=currentDisplay;">-</button>
+
+            <button class="button"onclick="currentDisplay=currentDisplay+'5';document.querySelector('#display').value=currentDisplay;">5</button>
+
+            <button class="button"oneclick="currentDisplay=currentDisplay+'6';docment.querySelector('#display').value=currentDisplay;">6</button>
+            <button class="button">*</button>
+            <button class="button">7</button>
+            <button class="button">8</button>
+            <button class="button">/</button>
+
+            <button class="button"onclick="currentDisplay=eval(currentDisplay);docment.querySelector('#display').value=currentDisplay;">=</button>
+
+            <button class="button">9</button>
+            <button class="button">0</button>
+            <button class="button">.</button> 
+        </div>
+    </div>
+    <script>
+        let currentDisplay='';
+        document.querySelector('#display').value=currentDisplay;
+    </script>
+
+    
+</body>
+</html>
